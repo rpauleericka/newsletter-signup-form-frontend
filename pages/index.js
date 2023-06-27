@@ -47,7 +47,6 @@ export default function Home() {
                 </div>
                 <input
                   type="email"
-                  ref="email"
                   {...register("email", {
                     required: "Valid email required",
                     pattern: {
