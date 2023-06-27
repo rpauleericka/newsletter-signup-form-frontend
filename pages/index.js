@@ -30,28 +30,37 @@ export default function Home() {
               <li>Measuring to ensure updates are a success</li>
               <li>And much more!</li>
             </ul>
-            <form onSubmit={handleSubmit(submitSignupForm)}>
+            <form onSubmit={handleSubmit(submitSignupForm)} novalidate>
               <div className="pr-5">
                 <div className="flex items-center">
                   <label
-                    htmlFor="email"
+                    htmlFor="Enter your email"
                     className="flex-1 py-2 font-bold text-sm"
                   >
                     Email address
                   </label>
-                  {errors.email && <span className="text-tomato font-semibold text-sm">{errors.email.message}</span>}
+                  {errors.email && (
+                    <span className="text-tomato font-semibold text-sm">
+                      {errors.email.message}
+                    </span>
+                  )}
                 </div>
                 <input
                   type="email"
+                  ref="email"
                   {...register("email", {
-                    required: "Valid email required.",
+                    required: "Valid email required",
                     pattern: {
                       value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
-                      message: "Valid email required.",
+                      message: "Valid email required",
                     },
                   })}
                   placeholder="email@company.com"
-                  className="peer block border border-gray-300 w-full rounded text-gray-900 bg-gray p-3 rounded rounded-lg cursor-pointer hover:border-black hover:text-black"
+                  className={`block w-full p-3 rounded rounded-lg cursor-pointer border ${
+                    errors.email
+                    ? 'text-tomato focus:outline-none border-red-400 bg-red-300 bg-opacity-20 '
+                    : 'hover:border-black text-gray bg-transparent'
+                  }}`}
                   name="email"
                 />
                 <button

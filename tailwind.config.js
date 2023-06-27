@@ -17,6 +17,9 @@ module.exports = {
         darkSlateGrey: '#242742',
         charcoalGrey: '#36384e',
         grey: '#9294a0',
+      },
+      listStyleImage:{
+        store:'url("/assets/images/icon-list.svg")'
       }
     },
   },

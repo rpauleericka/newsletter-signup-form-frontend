@@ -15,3 +15,14 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+li {
+  color: #242742;
+  margin: 0;
+  padding: 5px 0 5px 30px;
+  list-style: none;
+  background-image: url("../public/assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
