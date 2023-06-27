@@ -8,7 +8,7 @@ export const SuccessPage = ({ newEmail }) => {
       {newEmail && (
         <>
           <div className="h-screen flex justify-center items-center">
-            <div className="bg-white p-10 w-80 space-y-3 rounded-2xl drop-shadow-lg flex flex-col">
+            <div className="bg-white p-8 w-1/6 space-y-5 rounded-2xl drop-shadow-lg flex flex-col">
               <Image
                 src="assets/images/icon-success.svg"
                 width={50}
@@ -18,7 +18,7 @@ export const SuccessPage = ({ newEmail }) => {
               <h1 className="text-4xl font-bold text-darkSlateGrey">
                 Thanks for subscribing!
               </h1>
-              <p className="text-xs px-2">
+              <p className="text-[10px] text-darkSlateGrey font-medium">
                 A confirmation email has been sent to{" "}
                 <span className="text-darkSlateGrey font-bold">{newEmail}</span>. Please open it and click the
                 button inside to confirm your subscription.
