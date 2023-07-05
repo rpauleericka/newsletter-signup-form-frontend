@@ -18,7 +18,7 @@ export const SignUpForm = ({ signUp }) => {
 
   return (
     <div className="md:h-screen md:flex md:flex-col md:justify-center md:items-center">
-      <div className="md:bg-white md:rounded md:rounded-2xl md:grid md:grid-cols-2 md:mx-5 md:min-w-max">
+      <div className="md:bg-white md:rounded md:rounded-2xl md:grid md:grid-cols-2 md:mx-5 md:w-[50rem]">
         <div className="h-72 w-full md:w-auto md:h-min md:m-5 md:order-last">
           <img
             src="assets/images/illustration-sign-up-desktop.svg"
