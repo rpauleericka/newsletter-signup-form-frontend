@@ -12,6 +12,6 @@ export default function Home() {
   };
 
   return (
-    <>{email != "" ? <SuccessPage newEmail={email} /> : <SignUpForm signUp={submitSignupForm}/>};</>
+    <>{email != "" ? <SuccessPage newEmail={email} /> : <SignUpForm signUp={submitSignupForm}/>}</>
   );
 }

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../public/assets/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../public/assets/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,13 +32,41 @@
   }
 }
 
+ul{
+  /*list-style-image: url("../public/assets/images/icon-list.svg");
+  margin-inline-start: 2rem;
+  text-align: center;*/
+  list-style-position: inside;
+}
+
 li {
   color: #242742;
   margin: 0;
-  padding: 5px 0 5px 30px;
+  padding-inline-start: 30px;
   list-style: none;
   background-image: url("../public/assets/images/icon-list.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 20px;
 }
+
+/*li {
+  color: #242742;
+  margin: 0;
+  padding: 0 0 5px 30px;
+  list-style: none;
+  background-image: url("../public/assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 20px;
+}*/
+/*ul{
+  list-style-image: url("../public/assets/images/icon-list.svg");
+  /*margin-inline-start: 2rem;
+  text-align: center;
+  list-style-position: inside;
+}
+
+li{
+  border: 1px solid #033;
+}*/
